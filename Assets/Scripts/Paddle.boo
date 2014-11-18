@@ -12,7 +12,7 @@ class Paddle (MonoBehaviour):
 			
 	def Update ():
 		horizontalMovement = Input.GetAxis("Horizontal")
-		Debug.Log("lives: " + lives)
+		#Debug.Log("lives: " + lives)
 		if(horizontalMovement < 0 or horizontalMovement > 0):		
 			position.x += horizontalMovement*velocity
 			if(position.x < renderer.bounds.size.x/2):
