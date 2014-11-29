@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Help.unity
   - enabled: 1
     path: Assets/Gameplay2.unity
+  - enabled: 1
+    path: Assets/HighScoreInput.unity

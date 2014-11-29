@@ -750,6 +750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numRows: 4
   numColumns: 8
+  numRowsSecondLevel: 8
   paddleWidth: 1
   paddleHeight: .5
   startTime: 0
