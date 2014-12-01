@@ -10,6 +10,8 @@ class World (MonoBehaviour):
 	public paddleHeight as double = 0.5f
 	public startTime as double = 0.0f	
 	public numBricksHit as int = 0
+	public showPause as bool = false
+	
 	def Start ():
 		numRows = 4
 		numColumns = 8
@@ -67,4 +69,32 @@ class World (MonoBehaviour):
 					
 	def Update ():
 		#Debug.Log("time : " + (Time.time - startTime))
-		pass
+		if(Input.GetKeyDown(KeyCode.P) or Input.GetKeyDown(KeyCode.Escape)):
+			if(showPause):
+				showPause = false
+				Time.timeScale = 1.0
+			else:
+				showPause = true
+				Time.timeScale = 0.0
+		if(Input.GetKeyDown(KeyCode.Q)):
+			Application.LoadLevel("Menu")
+	
+		
+	def OnGUI():
+		if(showPause):
+			font as GUIStyle = GUIStyle()
+			textureFont as GUIStyle = GUIStyle()
+			font.fontSize = 15
+			font.normal.textColor = Color.red
+			backTexture = Texture2D(128, 128) as Texture2D
+			for i in range(128):
+				for j in range(128):
+					backTexture.SetPixel(i, j, Color.black)
+			backTexture.Apply()
+			textureFont.normal.background = backTexture
+			
+			GUI.Box(Rect(200, 150, 260, 250), "", textureFont)			
+			GUI.Label(Rect(210,180,150,350), "Game Paused. Press P to \nunpause and Q to quit to menu", font)
+			
+			GUI.Label(Rect(210,230,150,350), "Move Left \t \t \t \t Left Arrow Key", font)
+			GUI.Label(Rect(210,250,150,350), "Move Right \t \t \t \t Right Arrow Key", font)			

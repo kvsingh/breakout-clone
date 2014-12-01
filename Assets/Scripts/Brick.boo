@@ -18,7 +18,7 @@ class Brick (MonoBehaviour):
 			scoreWidgetMesh = GameObject.Find("gameplayScreenScoreText").transform.GetComponent("TextMesh") as TextMesh
 			scoreWidgetMesh.text = StaticStuff.score.ToString()	
 			world.numBricksHit += 1
-			if(world.numBricksHit == world.numRows*world.numColumns): 
+			if((world.numBricksHit == world.numRows*world.numColumns and Application.loadedLevelName=='Gameplay') or (world.numBricksHit == 40 and Application.loadedLevelName=='Gameplay2')): 
 				if(Application.loadedLevelName=='Gameplay'):
 					Application.LoadLevel("Gameplay2")
 				else:

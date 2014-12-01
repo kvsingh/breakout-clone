@@ -2,9 +2,9 @@
 
 class HighScoreInput (MonoBehaviour): 
 
-	public playerName as string = "Enter name"	
+	public playerName as string
 	def Start ():
-		pass
+		playerName = ""
 		
 	def Update ():
 		pass
@@ -25,9 +25,9 @@ class HighScoreInput (MonoBehaviour):
 		font.fontSize = 30
 		font.normal.textColor = Color.red			
 		
-		GUI.Label(Rect(110, 220, 200, 40), "High Score!", font)
-		playerName = GUI.TextField(Rect(110,300,170,40), playerName, textureFont)
-		if(GUI.Button(Rect(290, 300, 40, 40), "Go")):										
+		#GUI.Label(Rect(310, 220, 200, 40), "High Score!", font)
+		playerName = GUI.TextField(Rect(310,300,170,40), playerName, textureFont)
+		if(GUI.Button(Rect(490, 300, 40, 40), "Go")):										
 			highScores as (int) = (0, 0, 0, 0, 0)
 			highScoreNames as List = ["", "", "", "", ""]					
 			pos as int = -1

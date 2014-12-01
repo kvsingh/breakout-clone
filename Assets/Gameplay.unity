@@ -168,7 +168,7 @@ Transform:
   m_PrefabInternal: {fileID: 794791143}
   m_GameObject: {fileID: 90707028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.7536373, y: 1.10534203, z: 0}
+  m_LocalPosition: {x: 14.5, y: 1.10534203, z: 0}
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
@@ -703,7 +703,7 @@ Transform:
   m_PrefabInternal: {fileID: 1546864665}
   m_GameObject: {fileID: 963797316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.4034472, y: 1.10534203, z: 0}
+  m_LocalPosition: {x: 12, y: 1.10534203, z: 0}
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
@@ -750,10 +750,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numRows: 4
   numColumns: 8
+  numRowsSecondLevel: 0
+  startYSecondLevel: 0
   paddleWidth: 1
   paddleHeight: .5
   startTime: 0
   numBricksHit: 0
+  showPause: 0
 --- !u!4 &1136318836
 Transform:
   m_ObjectHideFlags: 0

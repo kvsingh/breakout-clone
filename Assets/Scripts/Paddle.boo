@@ -5,7 +5,7 @@ class Paddle (MonoBehaviour):
 	public worldWidth as double = 16.0	
 	public velocity as double
 	private position as Vector3
-	public lives as int = 3
+	public lives as int = 5
 			
 	def Start ():
 		position = transform.position
