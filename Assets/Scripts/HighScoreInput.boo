@@ -20,14 +20,14 @@ class HighScoreInput (MonoBehaviour):
 		textureFont.fontSize = 30
 		textureFont.normal.textColor = Color.red
 		
-		GUI.Box(Rect(100, 200, 250, 150), "")
+		#GUI.Box(Rect(100, 200, 250, 150), "")
 		font as GUIStyle = GUIStyle()
 		font.fontSize = 30
 		font.normal.textColor = Color.red			
 		
 		#GUI.Label(Rect(310, 220, 200, 40), "High Score!", font)
-		playerName = GUI.TextField(Rect(210,300,170,40), playerName, textureFont)
-		if(GUI.Button(Rect(390, 300, 40, 40), "Go")):										
+		playerName = GUI.TextField(Rect(660,600,170,40), playerName, textureFont)
+		if(GUI.Button(Rect(840, 600, 40, 40), "Go")):										
 			highScores as (int) = (0, 0, 0, 0, 0)
 			highScoreNames as List = ["", "", "", "", ""]					
 			pos as int = -1

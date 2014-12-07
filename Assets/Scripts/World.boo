@@ -93,8 +93,8 @@ class World (MonoBehaviour):
 			backTexture.Apply()
 			textureFont.normal.background = backTexture
 			
-			GUI.Box(Rect(200, 150, 260, 250), "", textureFont)			
-			GUI.Label(Rect(210,180,150,350), "Game Paused. Press P to \nunpause and Q to quit to menu", font)
+			GUI.Box(Rect(600, 300, 260, 250), "", textureFont)			
+			GUI.Label(Rect(610,330,150,350), "Game Paused. Press P to \nunpause and Q to quit to menu", font)
 			
-			GUI.Label(Rect(210,230,150,350), "Move Left \t \t \t \t Left Arrow Key", font)
-			GUI.Label(Rect(210,250,150,350), "Move Right \t \t \t \t Right Arrow Key", font)			
+			GUI.Label(Rect(610,380,150,350), "Move Left \t \t \t \t Left Arrow Key", font)
+			GUI.Label(Rect(610,400,150,350), "Move Right \t \t \t \t Right Arrow Key", font)			
